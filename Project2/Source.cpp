@@ -1,44 +1,44 @@
 #include <iostream>
 using namespace std;
-// Абстрактный базовый класс BaseEnemy
+// ГЂГЎГ±ГІГ°Г ГЄГІГ­Г»Г© ГЎГ Г§Г®ГўГ»Г© ГЄГ«Г Г±Г± BaseEnemy
 class BaseEnemy {
 public:
-    // Чисто виртуальные методы 
-    virtual void DoDamage() = 0; // Наносит урон
-    virtual void Die() = 0;       // Умирает
-    virtual void ChasePlayer() = 0; // Преследует игрока
+    // Г—ГЁГ±ГІГ® ГўГЁГ°ГІГіГ Г«ГјГ­Г»ГҐ Г¬ГҐГІГ®Г¤Г» 
+    virtual void DoDamage() = 0; // ГЌГ Г­Г®Г±ГЁГІ ГіГ°Г®Г­
+    virtual void Die() = 0;       // Г“Г¬ГЁГ°Г ГҐГІ
+    virtual void ChasePlayer() = 0; // ГЏГ°ГҐГ±Г«ГҐГ¤ГіГҐГІ ГЁГЈГ°Г®ГЄГ 
 
-    // Виртуальный деструктор 
+    // Г‚ГЁГ°ГІГіГ Г«ГјГ­Г»Г© Г¤ГҐГ±ГІГ°ГіГЄГІГ®Г° 
     virtual ~BaseEnemy() {}
 };
 
-// Производный класс Goblin
+// ГЏГ°Г®ГЁГ§ГўГ®Г¤Г­Г»Г© ГЄГ«Г Г±Г± Goblin
 class Goblin : public BaseEnemy {
 public:
     void DoDamage() override {
-        std::cout << "Гоблин наносит урон!" << std::endl;
+        cout << "ГѓГ®ГЎГ«ГЁГ­ Г­Г Г­Г®Г±ГЁГІ ГіГ°Г®Г­!" << endl;
     }
 
     void Die() override {
-        std::cout << "Гоблин умирает с воплем!" << std::endl;
+        cout << "ГѓГ®ГЎГ«ГЁГ­ ГіГ¬ГЁГ°Г ГҐГІ Г± ГўГ®ГЇГ«ГҐГ¬!" << endl;
     }
 
     void ChasePlayer() override {
-        std::cout << "Гоблин преследует игрока, спотыкаясь!" << std::endl;
+        cout << "ГѓГ®ГЎГ«ГЁГ­ ГЇГ°ГҐГ±Г«ГҐГ¤ГіГҐГІ ГЁГЈГ°Г®ГЄГ , Г±ГЇГ®ГІГ»ГЄГ ГїГ±Гј!" << endl;
     }
 };
 
-// Производный класс Orc
+// ГЏГ°Г®ГЁГ§ГўГ®Г¤Г­Г»Г© ГЄГ«Г Г±Г± Orc
 class Orc : public BaseEnemy {
 public:
     void DoDamage() override {
-        std::cout << "Орк бьет дубиной!" << std::endl;
+        cout << "ГЋГ°ГЄ ГЎГјГҐГІ Г¤ГіГЎГЁГ­Г®Г©!" << endl;
     }
     void Die() override {
-        std::cout << "Орк падает замертво с предсмертным хрипом." << std::endl;
+        cout << "ГЋГ°ГЄ ГЇГ Г¤Г ГҐГІ Г§Г Г¬ГҐГ°ГІГўГ® Г± ГЇГ°ГҐГ¤Г±Г¬ГҐГ°ГІГ­Г»Г¬ ГµГ°ГЁГЇГ®Г¬." << endl;
     }
     void ChasePlayer() override {
-        std::cout << "Орк бежит за игроком, сотрясая землю!" << std::endl;
+        cout << "ГЋГ°ГЄ ГЎГҐГ¦ГЁГІ Г§Г  ГЁГЈГ°Г®ГЄГ®Г¬, Г±Г®ГІГ°ГїГ±Г Гї Г§ГҐГ¬Г«Гѕ!" << endl;
     }
 };
 
