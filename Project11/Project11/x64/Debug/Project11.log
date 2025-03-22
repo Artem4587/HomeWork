@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(16,29): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(44,33): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Project11.vcxproj -> C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\x64\Debug\Project11.exe
