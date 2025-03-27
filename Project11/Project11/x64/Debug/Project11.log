@@ -1,4 +1,21 @@
 ﻿  Source.cpp
 C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(16,29): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
 C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(44,33): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-  Project11.vcxproj -> C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\x64\Debug\Project11.exe
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(79,7): error C2011: NumberCounter: переопределение типа "class"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(6,7):
+       см. объявление "NumberCounter"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(88,7): error C2011: DigitCounter: переопределение типа "class"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(11,7):
+       см. объявление "DigitCounter"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(101,7): error C2011: PrimeFactorCounter: переопределение типа "class"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(19,7):
+       см. объявление "PrimeFactorCounter"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(140,5): error C2084: функция "int main(void)" уже имеет текст реализации
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(48,5):
+      см. предыдущее определение "main"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(148,18): error C2079: "digitCounter" использует не имеющую определения структуру class "DigitCounter"
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project11\Source.cpp(149,24): error C2079: "primeFactorCounter" использует не имеющую определения структуру class "PrimeFactorCounter"
