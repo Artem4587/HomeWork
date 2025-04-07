@@ -46,7 +46,7 @@ protected:
 // Базовый класс для водного транспорта
 class WaterTransport {
 public:
-    WaterTransport(int depth) 
+    WaterTransport(int depth)
     {
         this->depth_ = depth;
     }
@@ -129,7 +129,7 @@ public:
     }
 
 private:
-    bool landMode_; 
+    bool landMode_;
 };
 
 int main() {
@@ -150,7 +150,7 @@ int main() {
     AmphibiousVehicle amphibian(70, 30, 2);
     amphibian.showBattery();
     amphibian.drive();
-    amphibian.sail();  
+    amphibian.sail();
     amphibian.switchToWaterMode();
     amphibian.sail();
     amphibian.dive(3);
