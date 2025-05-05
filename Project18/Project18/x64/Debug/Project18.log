@@ -1,0 +1,38 @@
+﻿  FileName.cpp
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(45,15): error C2374: distrib: переопределение; множественная инициализация
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(44,15):
+       см. объявление "distrib"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(48,68): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(67,15): error C2374: distrib: переопределение; множественная инициализация
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(66,15):
+       см. объявление "distrib"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(92,17): error C2061: синтаксическая ошибка: идентификатор "Enemy"
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(94,48): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(96,9): error C2065: enemy: необъявленный идентификатор
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(130,37): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(135,11): error C2660: Player::Attack: функция не принимает 1 аргументов
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(92,10):
+       см. объявление "Player::Attack"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(135,11):
+      при попытке сопоставить список аргументов "(Enemy)"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(139,11): error C2660: Player::Attack: функция не принимает 1 аргументов
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(92,10):
+       см. объявление "Player::Attack"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(139,11):
+      при попытке сопоставить список аргументов "(Enemy)"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(143,11): error C2660: Player::Attack: функция не принимает 1 аргументов
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(92,10):
+       см. объявление "Player::Attack"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(143,11):
+      при попытке сопоставить список аргументов "(Enemy)"
+  
+C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(144,11): error C2660: Player::Attack: функция не принимает 1 аргументов
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(92,10):
+       см. объявление "Player::Attack"
+      C:\Users\aa-sa\OneDrive\Рабочий стол\HomeWork\Project18\FileName.cpp(144,11):
+      при попытке сопоставить список аргументов "(Enemy)"
+  
