@@ -1,9 +1,14 @@
 ﻿using System;
+
+// 1. Базовый интерфейс
 interface IWeapon
 {
-    string Name { get; }  
+    string Name { get; } 
     double Weight { get; } 
 }
+
+// 2. Интерфейсы, разделяющие функциональность (ISP)
+
 interface IShootable : IWeapon
 {
     event EventHandler ShotFired; 
@@ -11,10 +16,12 @@ interface IShootable : IWeapon
     void Shoot();
     int Ammo { get; set; }
 }
+
 interface IMeeleWeapon : IWeapon
 {
-    void Attack(ICharacter target); 
+    void Attack(ICharacter target);
 }
+
 interface IReloadable : IShootable
 {
     void Reload();
@@ -25,12 +32,16 @@ interface IAimable : IShootable
 {
     void Aim();
 }
+
 interface ICharacter
 {
     string Name { get; }
     double Health { get; set; }
     void TakeDamage(double damage);
 }
+
+// 3. Классы, реализующие интерфейсы
+
 class Pistol : IReloadable, IAimable
 {
     public string Name { get; } = "Glock 17"; 
@@ -39,10 +50,12 @@ class Pistol : IReloadable, IAimable
     public int MaxAmmo { get; set; } = 17; 
 
     public event EventHandler ShotFired; 
+
     public Pistol()
     {
         Ammo = MaxAmmo;
     }
+
     public void Shoot()
     {
         if (Ammo > 0)
@@ -56,16 +69,19 @@ class Pistol : IReloadable, IAimable
             Console.WriteLine($"{Name}: Нет патронов!");
         }
     }
+
     public void Reload()
     {
         Ammo = MaxAmmo;
         Console.WriteLine($"{Name}: Перезарядка.");
     }
+
     public void Aim()
     {
         Console.WriteLine($"{Name}: Прицеливаемся...");
     }
 }
+
 class Sword : IMeeleWeapon
 {
     public string Name { get; } = "Стальной меч"; 
@@ -77,6 +93,7 @@ class Sword : IMeeleWeapon
         target.TakeDamage(25); 
     }
 }
+
 class SniperRifle : IReloadable, IAimable
 {
     public string Name { get; } = "Accuracy International Arctic Warfare"; 
@@ -116,6 +133,8 @@ class SniperRifle : IReloadable, IAimable
         Console.WriteLine($"{Name}: Прицеливаемся через оптический прицел...");
     }
 }
+
+// Реализация персонажа
 class Character : ICharacter
 {
     public string Name { get; }
@@ -148,13 +167,15 @@ class Example
 
         Character enemy = new Character("Goblin", 100);
 
+        // Использование оружия
         pistol.Shoot();
         sniper.Aim();
         sniper.Shoot();
         sword.Attack(enemy);
         sword.Attack(enemy);
-        sword.Attack(enemy);
+        sword.Attack(enemy); 
 
+        //Подписка на событие
         sniper.ShotFired += (sender, eventArgs) => Console.WriteLine("Событие выстрела из снайперской винтовки!");
         sniper.Shoot();
     }
